@@ -9,6 +9,9 @@ body {
   justify-content: center;
   color: #fff;
   text-align: center;
+  background: #FFE4E1; /* pastel pink */
+  color: #4A2F4A; /* soft purple text */
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -39,4 +42,22 @@ body {
   margin-top: 30px;
   font-size: 1rem;
   opacity: 0.8;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-100px); opacity: 0; }
+}
+
+.heart {
+  position: absolute;
+  animation: float 3s infinite;
+  font-size: 2rem;
+  color: #FF6B81;
+}
+
+.love:hover {
+  color: #FF4081;
+  font-size: 2.2rem;
+  transition: 0.2s;
 }
